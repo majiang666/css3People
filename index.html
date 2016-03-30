@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3动画</title>
+	<style type="text/css">
+  		*{
+  			margin:0;
+  			padding:0;
+  		}
+  		.demo{
+  			width:128px;
+  			height:300px;
+  			margin:0 auto;
+  			background: url(images/kai_running.png) no-repeat;
+        -webkit-animation-name: ren; /* 动画名称 */
+        -webkit-animation-iteration-count: infinite; /* 动画无限播放 */
+  			-webkit-animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
+        -webkit-animation-duration: 1s;/* 动画运行的时间 */
+        background-position:-33px 0;
+  		}
+  		@-webkit-keyframes ren{
+        0%{background-position:-33px 0;}
+        5.3%{background-position:-213px 0;}
+        10.6%{background-position:-393px 0;}
+        15.9%{background-position:-573px 0;}
+        21.2%{background-position:-753px 0;}
+        26.5%{background-position:-932px 0;}
+        31.8%{background-position:-1113px 0;}
+        37.1%{background-position:-1293px 0;}
+        42.4%{background-position:-1473px 0;}
+        47.7%{background-position:-1653px 0;}
+        53%{background-position:-1833px 0;}
+        58.3%{background-position:-2013px 0;}
+        63.6%{background-position:-2193px 0;}
+        68.9%{background-position:-2373px 0;}
+        74.2%{background-position:-2553px 0;}
+        79.5%{background-position:-2733px 0;}
+        84.8%{background-position:-2913px 0;}
+        90.1%{background-position:-3093px 0;}
+        95.4%{background-position:-3273px 0;}
+        100%{background-position:-33px 0;}
+    }
+  		
+	</style>
+</head>
+<body>
+
+	<div class="demo"></div>
+	
+</body>
+</html>
